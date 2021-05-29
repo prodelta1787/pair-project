@@ -51,18 +51,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
  //search
 
-$("#myinputs").on("keyup", function() {
+ $("#myinputs").on("keyup", function() {
   var value = $(this).val().toLowerCase();
   $(".wrapper .container .row .col-md-3").filter(function() {
     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
   });
 });
-
-
-
-$(".btn btn-primary").click(function () {
-$(".row g-1").append('<div class="col-md-3"><div class="card p-3"><div class="text-center"> <img src='$("#image").val()+'width="200"></div><div class="product-details"> <span class="font-weight-bold d-block">'$("#price").val()+'</span><span>'$("Name of product").val()+'</span><div class="buttons d-flex flex-row"><div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Add to cart </button></div><div class="weight"> <small>20 piece 2.5kg</small> </div></div></div></div>');
-
-
 
 
